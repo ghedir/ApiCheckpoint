@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+body {
+  background-color: #28223f;
+  font-family: Montserrat, sans-serif;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+
+  min-height: 100vh;
+  margin: 0;
+}
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  background-color: rgb(185, 189, 204);
+}
+h3 {
+  margin: 10px 0;
+  color: beige;
 }
 
-.App-link {
-  color: #61dafb;
+h6 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+}
+.fa-user {
+  size: 20px;
+  color: #02899c;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.card-container {
+  background-color: #231e39;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  color: #b3b8cd;
+  padding-top: 30px;
+  position: relative;
+  width: 500px;
+  height: 1000px;
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.card-container .round {
+  border: 1px solid #03bfcb;
+  border-radius: 50%;
+  padding: 7px;
+  width: 50%;
+}
+
+.address {
+  background-color: #1f1a36;
+  text-align: left;
+  padding: 15px;
+  margin: 30px;
+}
+.company {
+  background-color: #1f1a36;
+  text-align: left;
+  padding: 15px;
+  margin: 30px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+strong {
+  color: #03bfcb;
+}
+td {
+  padding: 5px;
 }
